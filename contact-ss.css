@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*navbar -style*/
+nav .nav-link{
+    color: #daf !important;
+    font-weight: 400;
+    text-shadow:0 0 10px rgb(65, 65, 51);
+    
+}
+.navbar-toggler, .navbar-toggler-icon{
+    color: #daf !important;
+}
+.nav-link:hover{
+    border-bottom: 1px solid #daf;
+}
+/*body styling*/
+body{
+    background-color: black !important;
+    width: 100%;
+    height: 100%;
+}
+.contact{
+    position: relative;
+    width: 100%;
+    padding: 40px 100px;
+}
+.contact .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+.contact .title h1{
+    color: #daf;
+    font-weight: 600;
+}
+.form{
+    grid-area: form;
+}
+.info{
+    grid-area: info;
+}
+.map{
+    grid-area: map;
+}
+.contact{
+    padding: 40px;
+    background: #fff;
+    box-shadow: 0 5px 35px rgb(0,0,0,0.15);
+}
+.box{
+    position: relative;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 5fr 4fr;
+    grid-template-areas: 
+    "form info"
+    "form map";
+    grid-gap:20px;
+    margin-top: 20px;
+}
+.contact h3{
+    color: rgb(164, 31, 252);
+    font-weight: 500;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+/*form*/
+.formBox{
+    position: relative;
+    width: 100%;
+}
+.formBox .row50{
+    display: flex;
+    gap: 20px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 50%;
+}
+.formBox .row100 .inputBox{
+    width: 100%;
+}
+.inputBox span{
+    color: #9000f6;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 500;
+    
+}
+.inputBox input{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid black;
+}
+.inputBox textarea{
+    padding: 10px;
+    font-size: 1.1em;
+    outline: none;
+    border: 1px solid black;
+    resize: none;
+    min-height: 220px;
+    margin-bottom: 10px;
+}
+.inputBox input[type="submit"]{
+    background: #9e29f2;
+    color: black;
+    border: none;
+    font-size:1.1em;
+    max-width: 120px;
+    font-weight: 500;
+    cursor: pointer; 
+}
+.inputBox ::placeholder{
+    color: #9e29f2;
+}
+.info{
+    background: #daf;
+}
+.info .infBox div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.info .infBox div span{
+    max-width: 40px;
+    height: 40px;
+    background: #9e29f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    border-radius: 30%;
+    margin-right: 15px;
+}
+.info .infBox div p{
+    color: #9e29f2;
+    font-size: 1.1em;
+}
+.info .infBox div a{
+    color: #9e29f2;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+.sci{
+    margin-top: 40px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+    margin-right: 15px;
+
+}
+.sci li a{
+    color: #9e29f2;
+    font-size: 2em;
+    color:#9e29f2;
+}
+.sci li a:hover{
+    color: black;
+}
+.map{
+    padding: 0;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*footer*/
+footer{
+    background-color:black;
+    margin-top: 20%;
+}
+.footercontainer{
+    width:100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color:#daf;
+    margin: 10px;
+    border-radius: 30%;
+}
+.socialIcons a i{
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+
+}
+/* hover effect on social media icon*/
+.socialIcons a:hover{
+    background-color: #6d00fc;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color:white;
+    transition: 0.5s;
+
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: #daf;
+    text-shadow: none;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom p.foot{
+    color: #daf;
+    background-color: rgb(16, 15, 15);
+    padding: 20px;
+    text-align: center;
+    border: none;
+}
+.footerBottom p.foot{
+    color: #daf;
+    width: 100%;
+}
+.designer{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}

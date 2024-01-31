@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Poppins:ital,wght@1,300;1,500&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*navbar -style*/
+nav .nav-link{
+    color: #daf !important;
+    font-weight: 400;
+    text-shadow:0 0 10px rgb(65, 65, 51);
+    
+}
+.navbar-toggler, .navbar-toggler-icon{
+    color: #daf !important;
+}
+.nav-link:hover{
+    border-bottom: 1px solid #daf;
+}
+/* about page section*/
+body{
+    background-color: black !important;
+    width: 100%;
+    height: 100%;
+}
+/* title styling*/
+ .title{
+   font-size: 120px;
+   color: #daf;
+ }
+.titlepage{
+    font-size: 90px;
+     color: #daf;
+}
+/* paragraph color*/
+.para1{
+    color: white;
+}
+.para2{
+    color: white;
+}
+.para3{
+    color: white;
+}
+
+.mission{
+    width: 30%;
+    display: inline-block;
+    border: 2px solid rgb(44, 7, 255);
+    padding:20px;
+    margin: 25px;  
+    transform: 1s;
+    margin-left: 10%;
+    border-radius: 5%;
+}
+.vision{
+    width: 30%;
+    display: inline-block;
+    border: 2px solid rgb(44, 7, 255);
+    padding: 23px;
+    margin: 25px; 
+    transform: 1s;
+    margin-left: 15%;
+    border-radius: 5%;
+}
+.mission:hover{
+    transform: scale(1.3);
+}
+.vision:hover{
+    transform: scale(1.3);
+}
+
+.identity{
+    font-size: 90px;
+    color: #daf;
+}
+
+/*styling*/
+.main{
+    width: 100%;
+    min-height: 380px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+.teamwork{
+    background: #daf;
+    padding: 30px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+.teamwork h3{
+    height: 35px;
+    width: 80%;
+    background:#daf;
+    margin: 50px auto;
+    position: relative;
+}
+.teamwork h3::after{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #fff,#0d060d);
+    position: absolute;
+    right: -5px;
+    top: -5px;
+    z-index: -1;
+}
+.teamwork h3::before{
+    content: '';
+    width: 40px;
+    height: 30px;
+    background: linear-gradient(to right, #fff,#09060a);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+.shadowone{
+    height: 200px;
+    width: 80%;
+    background: #daf;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 10%;
+    z-index: -1;
+    box-shadow: 0 0 20px -15px #030380;
+    transition: transform .8s;
+}
+.shadowtwo{
+    height: 200px;
+    width: 64%;
+    background:#daf;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 18%;
+    z-index: -2;
+}
+.main:hover .teamwork{
+    transform: translateY(-50px);
+}
+.main:hover .shadowone{
+    transform: translateY(-25px);
+}
+
+footer{
+    background-color:black;
+    margin-top: 20%;
+}
+.footercontainer{
+    width:100%;
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color:#daf;
+    margin: 10px;
+    border-radius: 30%;
+}
+.socialIcons a i{
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+
+}
+/* hover effect on social media icon*/
+.socialIcons a:hover{
+    background-color: #6d00fc;
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color:white;
+    transition: 0.5s;
+
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color: #daf;
+    text-shadow: none;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom p.foot{
+    color: #daf;
+    background-color: rgb(16, 15, 15);
+    padding: 20px;
+    text-align: center;
+    border: none;
+}
+.footerBottom p.foot{
+    color: #daf;
+    width: 100%;
+}
+.designer{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+}
